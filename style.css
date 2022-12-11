@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #000000;
 }
 
 a {
@@ -191,7 +192,8 @@ box-shadow: 0 0 20px 10px rgb(255, 132, 9);
 }
 @media(max-width: 700px){
 .text-top{
-  background-image: url(image/pro.gif);
+  background-image: url(image/Pro.gif);
+  background-size: 100%;
   
 }
 .work{
