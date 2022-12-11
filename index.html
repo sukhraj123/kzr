@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KZ Resturant Speacialist</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos-by-red.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"> 
+
 </head>
 <body>
-    <div class='nav'>
-      <img src="image/banner.png" alt="" />
-      
-      <label htmlFor=""class="menu">
-
-        <select name="Menu" id="Menu">
-            <option value="">Menu</option>
-        <option value=""><a href="">About</a></option>
-        <option value=""><a href="">Services</a></option>
-        <option value=""><a href="">Clients</a></option>
-        <option value=""><a href="">Contact</a></option>
-
-
-
-        </select>
+  <img src="image/banner.png" alt="" width="300px" />
+  
+  <nav id="navbar">
+    <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
         
 
+        <ul id="menu">
+            
+            <div>
 
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#work">Clients</a></li>
+              <li><a href="#contact">Contact</a></li>
 
+            <li><a href="https://www.instagram.com/keezwebdev/?hl=en"><img src="instagram(1).png" class="so" alt="" width="30px"></a></li>
 
+                <li><a href="https://www.facebook.com/profile.php?id=100077630387673"><img src="facebook(1).png" class="so" alt="" width="30px"></a></li>
+            
         
         
-        
-        
-        </label>
+        </ul>
+
+    </div>
+    <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+</nav>
 
     
-    </div>
-
     
 
       
@@ -46,17 +52,17 @@
 
     </div> 
     
-    <div class='options'>
-      <a href=""><img src="image/dash.png" alt="" /></a>
+    <div class='options' >
+      <a href="https://order.online/en-US"><img src="image/dash.png" alt=""  /></a>
 
-      <a href=""><img src="image/skip.jpg" alt="" /></a>
+      <a href="https://www.skipthedishes.com/"><img src="image/skip.jpg" alt="" /></a>
 
-      <a href=""><img src="image/uber.png" alt="" /></a>
+      <a href="https://www.ubereats.com/ca?utm_source=AdWords_Brand&utm_campaign=CM2196377-search-google-brand_32_-99_CA-National_e_web_acq_cpc_en_T1_Generic_BM_uber%20eats_kwd-111378724137_617243177914_141039778060_b_c&campaign_id=18094446215&adg_id=141039778060&fi_id=&match=b&net=g&dev=c&dev_m=&ad_id=617243177914&cre=617243177914&kwid=kwd-111378724137&kw=uber%20eats&placement=&tar=&gclid=CjwKCAiA-dCcBhBQEiwAeWidtSboZ4KH-xrrclMzIVWBtn04lghe96WUeavAnOApoHQOJszq7BEL6hoCdD8QAvD_BwE&gclsrc=aw.ds"><img src="image/uber.png" alt="" /></a>
       
     </div>
         
     
-  <div class='us'>
+  <div class='us' id="about">
     <h1>ESTABLISHED : 2021</h1>
     <img src="image/2.png" alt="" />
     <p>
@@ -67,7 +73,7 @@ Vancouver that loves helping the <br /> HOSPITALITY BUSINESS connect with their 
       <img src="image/bg4.gif" alt="" />
     
     </div>
-    <div class='love'>
+    <div class='love' id="service">
 
       <h1>THINGS WE LOVE TO DO</h1>
 
@@ -87,9 +93,10 @@ Hosting, Emails & Unlimited Updates <br />
 Dedicated Account Manager 7 Days</p>
 
     </div>
-    <div class="work">
+    <div class="work" id="work">
       <h1>Work of the Month</h1>
     </div>
+    
     <section class='work'>
 
     <a href="https://sukhraj123.github.io/ilovecelsius/"><img src="image/1.png" alt="" /><p>ICelsius Bubble Tea <br /> Vancouver,Bc</p></a>
@@ -112,5 +119,92 @@ Dedicated Account Manager 7 Days</p>
 
 
     </section>
+    <div class="apps">
+      <h1>Contact us</h1>
+    </div>
+    <div class='contact' id="contact">
+      
+      <a href="mailto:nolimit.grewal@gmail.com"><img src="image/email.png" alt=""></a>
+      <a href="tel:6044454042"><img src="image/phone.png" alt=""></a>
+      <a href="index.html"><img src="image/lead.png" alt=""></a>
+      </div>
+
+
+      <div class='bg'>
+        <img src="image/bg2.png" alt="" />
+      
+      </div>
+
+
+      <section class="footer">
+
+
+
+        <img src="image/2.png" alt="">
+
+        <div>
+          <p>Made by <a href="www.KeezRyuusei.ca">KeezRyuusei.ca</a> 
+            © 2023 KZ Web Design & Development, All Rights Reserved.</p>
+        </div>
+      </section>
+
+
+
+
+
+
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+    });
+    
+    
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            duration: 3000,
+            once: true,
+          });
+        </script>
+    
+    <script>
+    
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+    
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+    
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    
+    </script>
+        
+    <script>
+            var navLinks = document.getElementById("navLinks");
+        
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+        
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            
+    
+           
+            
+        </script>
+    
 </body>
 </html>
